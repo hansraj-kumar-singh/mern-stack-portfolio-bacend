@@ -1,0 +1,1 @@
+import app from './app.js'; const stack=app.router.stack; stack.forEach((layer,idx)=>{ console.log('--- layer',idx, 'name=',layer.name); console.log('  matchers', layer.matchers); if(Array.isArray(layer.matchers)) layer.matchers.forEach((m,i)=>console.log('   matcher',i, m)); });
